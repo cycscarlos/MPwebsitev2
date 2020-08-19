@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content="MateoPublicidad Website" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, animacion, Grid, Flexbox, Video Background, Responsive"
+    />
+    <meta name="author" content="Ing.Carlos Colmenares A. from CYCSWeb" />
+
+    <title>
+      ¡Somos la agencia de publicidad de Caracas! Mateo Publicidad
+    </title>
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/estilos_Generales_v2.css" />
+    <link rel="stylesheet" href="css/estilos_Servicios_v2.css" />
+    <link rel="stylesheet" href="css/estilos_Card2_v2.css" />
+    <link rel="stylesheet" href="css/estilos_Portafolio_v2.css" />
+    <link rel="stylesheet" href="css/estilos_Clientes_v2.css" />
+    <link rel="stylesheet" href="css/estilos_Footer_v2.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container-Gral">
+      <header id="inicio" class="main-header">
+        <div class="container-Gral container--flex">
+          <div class="container-logo">
+            <img class="logo__img" src="img/logoMateo.jpg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <!-- MENU DE NAVEGACIÓN -->
+      <section id="inicio">
+        <nav class="main-nav">
+          <div class="container-Gral container-nav">
+            <span class="fas fa-bars" id="btnmenu"></span>
+
+            <ul class="menu" id="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link"><span>Inicio</span></a>
+              </li>
+              <li class="menu__item">
+                <a href="#servicios" class="menu__link"
+                  ><span>Servicios</span></a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#portafolio" class="menu__link"
+                  ><span>Portafolio</span></a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#clientes" class="menu__link"><span>Clientes</span></a>
+              </li>
+              <li class="menu__item">
+                <a href="#contactos" class="menu__link"
+                  ><span>Contactos</span></a
+                >
+              </li>
+            </ul>
+
+            <div class="social-icon social-btns">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-icon__link btn instagram"
+                ><span class="fab fa-instagram"></span
+              ></a>
+              <a
+                href="https://www.facebook.com/pagina"
+                target="_blank"
+                class="social-icon__link btn facebook"
+                ><span class="fab fa-facebook-f"></span
+              ></a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="social-icon__link btn twitter"
+                ><span class="fab fa-twitter"></span
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Área del vídeo principal -->
+      <section id="banner" class="banner">
+        <video
+          class="container__video"
+          src="img/video1.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+
+        <div class="banner__titulo">
+          <img src="img/logoMateo Banner.png" alt="" />
+        </div>
+
+        <div class="video-texto">
+          <p class="efecto1" id="subtitulo">BIOSEGURIDAD</p>
+          <p class="efecto2" id="subtitulo">VALLAS</p>
+          <!-- <p class="titulo">CREATIVIDAD SIN LIMITES</p> -->
+          <p class="efecto3" id="subtitulo">CORPÓREOS</p>
+          <p class="efecto4" id="subtitulo">STANDS</p>
+          <p class="efecto5" id="subtitulo">STICKERS</p>
+          <p class="efecto6" id="subtitulo">...y Muchos Más</p>
+        </div>
+
+        <div class="banner__icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </section>
+    </div>
+
+    <!-- SERVICIOS -->
+    <main>
+      <section id="servicios">
+        <div class="contenedor-servicios">
+          <p class="subtitulo-servicios">LO QUE HACEMOS y...</p>
+          <h2 class="titulo-servicios">QUIENES SOMOS</h2>
+
+          <div class="galeria-servicios">
+            <div class="imagen-servicio">
+              <img src="img/card1.jpg" alt="" />
+
+              <i class="icono-servicio far fa-lightbulb"></i>
+              <h3 class="icono-titulo">Acerca de <span>NOSOTROS</span></h3>
+              <div class="hover-servicio">
+                <p>
+                  En Mateo Publicidad nos encargamos de vender su compañía y sus
+                  productos de la mejor manera, despertando confianza en el
+                  internauta y garantizando su exposición en canales de
+                  comunicación.
+                </p>
+                <div>
+                  <a
+                    style="cursor: pointer;"
+                    onClick="muestra_oculta('Card2')"
+                    title=""
+                    class="boton_mostrar"
+                    href="#Card2"
+                    >Leer Más >></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="imagen-servicio">
+              <img src="img/card2.jpg" alt="" />
+              <i class="icono-servicio fas fa-chess-knight"></i>
+              <h3 class="icono-titulo">Nuestros <span>SERVICIOS</span></h3>
+              <div class="hover-servicio">
+                <p>
+                  Nos dedicamos a desarrollar soluciones en diversas áreas del
+                  diseño. Nos especializamos en crear y generar ideas
+                  innovadoras y de manera genial, con la finalidad suprema y
+                  objetivo único de afianzar tú marca y consolidar el éxito de
+                  tu negocio.
+                </p>
+                <div>
+                  <a
+                    style="cursor: pointer;"
+                    onClick="muestra_oculta('Card2')"
+                    title=""
+                    class="boton_mostrar"
+                    href="#Card2"
+                    >Leer Más >></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="imagen-servicio">
+              <img src="img/card3.jpg" alt="" />
+              <i class="icono-servicio fas fa-laptop"></i>
+              <h3 class="icono-titulo">Diseños de <span> IMAGÉN </span></h3>
+              <div class="hover-servicio">
+                <p>
+                  Tu marca es más que un conjunto de letras y símbolos que te
+                  definen; es la esencia de tu organización y el espiritu de tu
+                  compañia. Es ese activo intangible que te permite sobresalir
+                  ante la competencia y ganarte el corazón de tus clientes.
+                </p>
+                <div>
+                  <a
+                    style="cursor: pointer;"
+                    onClick="muestra_oculta('Card2')"
+                    title=""
+                    class="boton_mostrar"
+                    href="#Card2"
+                    >Leer Más >></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARD2 - NUESTROS SERVICIOS -->
+
+      <section id="card2">
+        <div id="Card2" class="Card2">
+          <nav class="menuCard2" id="menuCard2">
+            <h2 class="tituloCard2">QUÉ HACEMOS</h2>
+            <p class="subtituloCard2"><i>...y muy bien</i></p>
+            <div class="btn-departamentosCard2" id="btn-departamentosCard2">
+              <p>Nuestros <span>SERVICIOS</span></p>
+
+              <i class="fas fa-caret-down"></i>
+            </div>
+
+            <div class="contenedorCard2 contenedor-gridCard2">
+              <div class="gridCard2" id="gridCard2">
+                <div class="categorias">
+                  <h3 class="subtitulo">Categorias</h3>
+
+                  <a href="#card2" data-categoria="bioseguridad"
+                    >Bioseguridad <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="corporeos"
+                    >Corpóreos <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="vallas"
+                    >Vallas Publicitarias <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="papeleria"
+                    >Papelería <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="stands"
+                    >Stands <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="stickers"
+                    >Stickers <i class="fas fa-angle-right"></i
+                  ></a>
+                  <a href="#card2" data-categoria="diseño"
+                    >Diseño Gráfico <i class="fas fa-angle-right"></i
+                  ></a>
+                </div>
+
+                <div class="contenedor-subcategorias">
+                  <div class="subcategoria" data-categoria="bioseguridad">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Bioseguridad</h3>
+                      <a href="#card2">Mascaras protectoras acetato</a>
+                      <a href="#card2">Mamparas anti-contagio</a>
+                      <a href="#card2">Señaléticas anti-covid</a>
+                      <a href="#card2">Señaléticas para pisos</a>
+                      <a href="#card2">Señaléticas para alarmas</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-01.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-12.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-01.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-03.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-05.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="corporeos">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Corpóreos</h3>
+                      <a href="#card2">Letras Corporeas</a>
+                      <a href="#card2">Acrilico</a>
+                      <a href="#card2">Acero Inoxidable</a>
+                      <a href="#card2">Madera y/ MDF</a>
+                      <a href="#card2">Fachadas</a>
+                      <a href="#card2">Luz Led</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-09.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-02.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-11a.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-05.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-09.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="vallas">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Vallas Publicitarias</h3>
+                      <a href="#card2">Viales</a>
+                      <a href="#card2">Fachadas</a>
+                      <a href="#card2">Diseños y Maquetas</a>
+                      <a href="#card2">Montajes e Instalación</a>
+                      <a href="#card2">Mantenimiento reactivo</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-02.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-07.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-03.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-07.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-02.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="papeleria">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Papelería</h3>
+                      <a href="#card2">Carnetización</a>
+                      <a href="#card2">Boligrafos personalizados</a>
+                      <a href="#card2">Vajillas</a>
+                      <a href="#card2">Hojas Membrete</a>
+                      <a href="#card2">Menu de Restaurantes</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-08.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-10.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-04.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-04.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-08.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="stands">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Stands</h3>
+                      <a href="#card2">Diseño de interiores</a>
+                      <a href="#card2">Publicidad</a>
+                      <a href="#card2">Neon</a>
+                      <a href="#card2">Art-Home</a>
+                      <a href="#card2">Instalación profesional</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-06.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-03.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-12.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-05.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-06.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="stickers">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Stickers</h3>
+                      <a href="#card2">Vinil</a>
+                      <a href="#card2">Vinil Clear</a>
+                      <a href="#card2">Lito Adhesivo</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-08.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-10.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-04.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/z-2250x2250-04.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-08.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="subcategoria" data-categoria="diseño">
+                    <div class="enlaces-subcategoria">
+                      <h3 class="subtitulo">Diseño Gráfico</h3>
+                      <a href="#card2">Desarrollo de Imagen</a>
+                      <a href="#card2">Creación de Logos</a>
+                      <a href="#card2">Branding Personal</a>
+                      <a href="#card2">Refrescamiento de Imagen</a>
+                    </div>
+
+                    <div class="banner-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-06.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="galeria-subcategoria">
+                      <a href="#card2">
+                        <img src="img/MP/400x400-03.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-12.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-05.jpg" alt="" />
+                      </a>
+                      <a href="#card2">
+                        <img src="img/MP/400x400-06.jpg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <main class="contenedorCard2">
+            <article></article>
+          </main>
+        </div>
+      </section>
+
+      <!-- PORTAFOLIO  -->
+      <section id="portafolio">
+        <div class="contenedor-portafolio">
+          <p class="portafolio-subtitulo">CONOCE NUESTRO TRABAJO</p>
+          <h2 class="portafolio-titulo">PROYECTOS RECIENTES</h2>
+
+          <div class="gallery-container">
+            <div class="gallery__item">
+              <a href="#image1"
+                ><img src="img/MP/236x250-01.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image2"
+                ><img src="img/MP/236x250-02.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image3"
+                ><img src="img/MP/482x250-02.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image4"
+                ><img src="img/MP/482x510-01.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image5"
+                ><img src="img/MP/482x250-01.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image6"
+                ><img src="img/MP/236x250-03.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image7"
+                ><img
+                  src="img/MP/z-2250x2250-04.jpg"
+                  alt=""
+                  class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image8"
+                ><img src="img/MP/236x250-04.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image9"
+                ><img src="img/MP/236x250-05.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image10"
+                ><img src="img/MP/236x510-01.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image11"
+                ><img src="img/MP/400x400-11a.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image12"
+                ><img src="img/MP/482x250-04.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image13"
+                ><img src="img/MP/z-400x400-13.jpg" alt="" class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image14"
+                ><img
+                  src="img/MP/z-2250x2250-01.jpg"
+                  alt=""
+                  class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image15"
+                ><img
+                  src="img/MP/z-2250x2250-02.jpg"
+                  alt=""
+                  class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <a href="#image16"
+                ><img
+                  src="img/MP/z-2250x2250-03.jpg"
+                  alt=""
+                  class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+
+            <div class="gallery__item">
+              <a href="#image17"
+                ><img
+                  src="img/MP/z-2250x2250-05.jpg"
+                  alt=""
+                  class="gallery__img"
+              /></a>
+              <div class="glow-wrap">
+                <i class="glow"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- -------------------------------- -->
+          <!-- Definiciones de lightbox o Modal -->
+          <!-- -------------------------------- -->
+
+          <article class="light-box" id="image1">
+            <a href="#image12" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-01.jpg" />
+            <div class="container-text">
+              <p>
+                Mantén la seguridad de toda tu familia y empleados con máscaras
+                de acetato protectoras que garantizan una mayor protección ante
+                el covid-19
+                <br />
+                <br />
+                <strong>COTÍZALAS CON NOSOTROS A MUY BUEN PRECIO:</strong
+                ><br /><br />
+                -mascarillas<br />
+                -mascaras de acetato<br />
+                -covid-19<br />
+                -coronavirus Venezuela<br />
+                -bioseguridad<br />
+                -proteccion covid19<br />
+                -tiendas<br />
+                -farmacias<br />
+                -negocios<br />
+                -supermercados<br />
+                -bodegones
+              </p>
+            </div>
+            <a href="#image2" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/400x400-02.jpg" />
+            <div class="container-text">
+              <p>
+                La elegancia y estilo es parte fundamental de @ronbarrica por
+                eso lo representamos a través de un corpóreo hecho en MDF con
+                corte láser que hicimos para ellos<br /><br />
+                Es así como @celiveca confío una vez más en nosotros para
+                realizar un trabajo de primera con cada una de sus marcas:<br /><br />
+
+                -mdf personalizado<br />
+                -mdf decorado<br />
+                -corporeos<br />
+                -tiendas<br />
+                -maderas<br />
+                -barricas<br />
+                -ronbarrica
+              </p>
+            </div>
+            <a href="#image4" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image3">
+            <a href="#image13" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-07.jpg" />
+            <div class="container-text">
+              <p>
+                Dale vida a tus espacios dentro de tu negocio al plasmar todo tu
+                estilo en Neón, al mejor estilo de un corpóreo. Elige la forma,
+                el color y llámanos. Nosotros convertiremos tu logo o esa idea
+                que tienes en una realidad de calidad<br /><br />
+                -publicidad<br />
+                -impresiones<br />
+                -instalacion<br />
+                -servicios<br />
+                -neón<br />
+                -arthome<br />
+                -publicidad<br />
+                -impresión digital<br />
+              </p>
+            </div>
+            <a href="#image14" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image4" 1>
+            <a href="#image2" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/400x400-04.jpg" />
+            <div class="container-text">
+              <p>
+                Si necesitas una señaletica de bioseguridad lo ideal es que esta
+                pueda ser personalizada para que encaje con la imagen de tu
+                tienda o negocio<br /><br />
+                Nosotros no solo te ofrecemos el servicio de diseño, sino
+                también la impresión e instalación<br /><br />
+                -señaleticas<br />
+                -bioseguridad<br />
+                -impresion digital<br />
+                -vinil<br />
+                -convid19<br />
+                -coronavirus Venezuela
+              </p>
+            </div>
+            <a href="#image13" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image5">
+            <a href="#image16" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-05.jpg" />
+            <div class="container-text">
+              <p>
+                Tú nos indicas la señaletica que necesitas y nosotros la
+                personalizamos, imprimimos e instalamos con la mejor calidad y
+                al mejor costo<br /><br />
+                -señaleticas de seguridad<br />
+                -covid-19<br />
+                -coronavirus<br />
+                -coronavirus Venezuela<br />
+                -quedate en casa<br />
+                -negocio seguro<br />
+                -tienda segura<br />
+                -bioseguridad<br />
+                -manten la distancia
+              </p>
+            </div>
+            <a href="#image6" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image6">
+            <a href="#image5" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/400x400-06.jpg" />
+            <div class="container-text">
+              <p>
+                Trabaja con nosotros y te diseñamos digitalmente lo que quieres
+                para que sepas cómo va lucir, sino también lo podemos imprimir o
+                construir y luego instalártelo<br /><br />
+                Así como lo hicimos con nuestro cliente y aliado @tolon_fm<br /><br />
+                -diseño de interiores<br />
+                -diseño grafico<br />
+                -impresiones<br />
+                -montajes profesionales<br />
+                -ideas decoracion<br />
+                -negocios<br />
+                -tiendas
+              </p>
+            </div>
+            <a href="#image7" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image7">
+            <a href="#image6" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/z-2250x2250-04.jpg" />
+            <div class="container-text">
+              <p>
+                Poco a poco volveremos a la normalidad y es importante que tu
+                que tienes un restaurante estés preparado de la mejor forma. .
+                .<br /><br />
+                No solo con la señaletica correcta sino con unos menús que
+                llamen la atención de cada comensal. . . <br /><br />
+                -señaletica<br />
+                -señaletica<br />
+                covid<br />
+                -menu<br />
+                -menu con estilo<br />
+                -restaurante<br />
+                -restaurantes<br />
+                -covid-19
+              </p>
+            </div>
+            <a href="#image17" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image8">
+            <a href="#image17" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-08.jpg" />
+            <div class="container-text">
+              <p>
+                Si deseas verte diferente a los demás y dar una buena impresión
+                como empresa, personalizar toda tu Papeleria y artículos es una
+                gran opción:<br /><br />
+                -hojas mebretadas<br />
+                -Bolígrafos personalizados<br />
+                -Taza para café<br />
+                -Libreta de notas<br />
+                -papeleria<br />
+                -tazas personalizadas<br />
+                -libretas personalizadas<br />
+                -hojas membrete
+              </p>
+            </div>
+            <a href="#image9" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image9">
+            <a href="#image8" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/400x400-09.jpg" />
+            <div class="container-text">
+              <p>
+                Las letras corpóreas son como tu firma personal. Con tan solo
+                una silueta y una forma pueden decir muchas cosas de ti y en
+                este caso de tu negocio<br /><br />
+                Por eso nosotros personalmente nos encargamos de ofrecer los
+                mejores acabados y montajes de letras corpóreas en el material
+                que mejor se adapte a tu fachada y tu presupuesto<br /><br />
+                -corporeos<br />
+                -letras corporeas<br />
+                -acrilico<br />
+                -acero inoxidable<br />
+                -acero<br />
+                -maderas<br />
+                -mdf<br />
+                -fachada<br />
+                -fachadas bonitas<br />
+                -negocios<br />
+                -tiendas
+              </p>
+            </div>
+            <a href="#image10" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image10">
+            <a href="#image9" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/400x400-10.jpg" />
+            <div class="container-text">
+              <p>
+                Creamos un diseño único para el carnet de tu negocio o empresa y
+                lo imprimimos con el mejor PVC<br /><br />
+                Cotiza con nosotros y asegúrate que todo el personal tenga la
+                identificación correcta:<br /><br />
+                -carnets<br />
+                -pvc<br />
+                -empresas<br />
+                -tiendas<br />
+                -identificadores<br />
+                -carnet personalizados
+              </p>
+            </div>
+            <a href="#image11" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image11">
+            <a href="#image10" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-11a.jpg" />
+            <div class="container-text">
+              <p>
+                Cada corpóreo tiene una identidad y un estilo propio, por eso
+                antes de realizar cualquier trabajo nos preocupamos por conocer
+                la esencia de lo que cada negocio quiere transmitir con su
+                imagen<br /><br />
+                En este caso la tecnología y la calidad es lo primero para
+                @somoszonatech, por lo que les fabricamos un corpóreo digno de
+                ello en acero con luz de respaldo y detalles en acrílicos en
+                color azul y blanco<br /><br />
+                -corporeo<br />
+                -corporeos<br />
+                -tiendas bonitas<br />
+                -tiendas<br />
+                -acero<br />
+                -luz led<br />
+                -publicidad<br />
+                -trabajos publicitarios
+              </p>
+            </div>
+            <a href="#image12" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image12">
+            <a href="#image11" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/400x400-12.jpg" />
+            <div class="container-text">
+              <p>
+                Para poder trabajar correctamente en tu negocio en estos
+                momentos es necesario contar con todas las medidas de seguridad
+                anti convid19 posibles<br /><br />
+                Así que contáctanos y cotiza tu mampara de acrílico que nosotros
+                la diseñamos a la medida necesaria y la instalamos.<br /><br />
+                -mamparas protectoras<br />
+                -mamparas anticontagio<br />
+                -mamparas anticovid-19<br />
+                -covid-19<br />
+                -bioseguridad<br />
+                -farmacias<br />
+                -tiendas<br />
+                -bodegones<br />
+                -negocios
+              </p>
+            </div>
+            <a href="#image1" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image13">
+            <a href="#image4" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/z-400x400-13.jpg" />
+            <div class="container-text">
+              <p>
+                La primera impresión de tu marca parte de cómo se vea tú logo,
+                por eso tienes que tener algo que te identifique
+                perfectamente<br /><br />
+                Contáctanos, cuéntanos tus ideas y te ayudamos a crear tu logo
+                perfecto<br /><br />
+                -diseño grafico<br />
+                -diseño<br />
+                -diseño creativo<br />
+                -logo designs<br />
+                -logos<br />
+                -tiendas<br />
+                -negocios<br />
+                -negocios online<br />
+                -negocios digitales
+              </p>
+            </div>
+            <a href="#image3" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image14">
+            <a href="#image3" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/z-2250x2250-01.jpg" />
+            <div class="container-text">
+              <p>
+                Es momentos de volver a compartir paulatinamente pero eso no
+                quiere decir que vamos a dejar de cuidarnos.<br /><br />
+
+                Así que garantiza la seguridad de todos con lo necesario en
+                bioseguridad en cada espacio de tu negocio.<br /><br />
+
+                Cotiza máscaras protectoras, mamparas,
+                señalizaciones,dispensadores anti-bacteriales o todo lo
+                necesario:<br /><br />
+                -señaléticas<br />
+                -bioseguridad<br />
+                -mascarillas<br />
+                -mamparas<br />
+                -antibacterial<br />
+                -convid19<br />
+                -coronavirus<br />
+                -protege tu negocio<br />
+                -tiendas<br />
+                -farmacias<br />
+                -supermercados<br />
+                -bodegones
+              </p>
+            </div>
+            <a href="#image15" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image15">
+            <a href="#image14" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/z-2250x2250-02.jpg" />
+            <div class="container-text">
+              <p>
+                Escoger la valla perfecta no es tarea fácil. Depende de muchos
+                factores que permiten conseguir el diseño Perfecto. . .<br /><br />
+                Cada color e imagen importa. Así siempre va a resaltar y va a
+                llamar la atención de cualquiera que la vea. . .<br /><br />
+                . -vallas<br />
+                -vallas caracas<br />
+                -vallas venezuela<br />
+                -publicidad<br />
+                -negocios y locales<br />
+                -impresion digital<br />
+                -diseños unicos
+              </p>
+            </div>
+            <a href="#image16" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image16">
+            <a href="#image15" class="next"
+              ><i class="fas fa-angle-left"></i
+            ></a>
+            <img src="img/MP/z-2250x2250-03.jpg" />
+            <div class="container-text">
+              <p>
+                Tú nos indicas la señaletica que necesitas y nosotros la
+                personalizamos, imprimimos e instalamos con la mejor calidad y
+                al mejor costo<br /><br />
+                -señaleticas de seguridad<br />
+                -covid-19<br />
+                -coronavirus<br />
+                -coronavirus Venezuela<br />
+                -quedate en casa<br />
+                -negocio seguro<br />
+                -tienda segura<br />
+                -bioseguridad<br />
+                -manten la distancia
+              </p>
+            </div>
+            <a href="#image5" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+
+          <article class="light-box" id="image17">
+            <a href="#image7" class="next"><i class="fas fa-angle-left"></i></a>
+            <img src="img/MP/z-2250x2250-05.jpg" />
+            <div class="container-text">
+              <p>
+                Mantén la distancia. Esta es una frase que no se te puede
+                olvidar ya que de ella depende tu salud y la de toda tu familia.
+                . .<br /><br />
+                Por eso, puedes contar con nosotros para imprimir e instalar
+                toda la señaletica de bioseguridad que necesita tu negocio. Y
+                así mandar el mensaje correcto que todos deben saber. . .<br /><br />
+                -señaleticas<br />
+                -bioseguridad<br />
+                -distanciamiento social<br />
+                -vinil<br />
+                -impresiones<br />
+                -restaurantes<br />
+                -tiendas<br />
+                -covid-19
+              </p>
+            </div>
+            <a href="#image8" class="next"
+              ><i class="fas fa-angle-right"></i
+            ></a>
+            <a href="#portafolio" class="close">X</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- CLIENTES -->
+
+      <section id="clientes">
+        <div class="contenedor-clientes">
+          <div class="box-titulo-clientes">
+            <div class="posicion-box-texto">
+              <p class="parrafo1-clientes">CLIENTES QUE</p>
+              <h2 class="parrafo2-clientes">CONFÍAN</h2>
+              <p class="parrafo3-clientes">EN NOSOTROS</p>
+            </div>
+          </div>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  <!--
+                  height="100"
+                  width="250"
+                  --
+                />
+                alt="" />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                  height="100"
+                  width="250"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!------- FOOTER ----------->
+    <footer class="footer" id="contactos">
+      <div class="footer-grid">
+        <div class="footer-titulo">
+          <h2>Contáctanos</h2>
+        </div>
+
+        <div class="footer-contactos">
+          <h6 class=""><span class="fas fa-thumbtack"></span>Dirección:</h6>
+          <p>Caracas, Venezuela</p>
+          <br /><br />
+          <h6 class=""><span class="fas fa-phone"></span>Telefóno:</h6>
+          <p>+58 414 3051781</p>
+          <br /><br />
+          <h6 class=""><span class="fas fa-envelope"></span>E-mail:</h6>
+          <p>mpventascorps@gmail.com</p>
+        </div>
+
+        <div class="footer-redes">
+          <h6>SIGUENOS</h6>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/pagina" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="mailto:cycs.instalacion@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i
+          ></a>
+        </div>
+
+        <form
+          action="envioCorreo.php"
+          method="post"
+          class="footer-form form-register"
+        >
+          <label for="" class="formulario__label"></label>
+          <input
+            class="controls"
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Nombre y Apellido"
+            required
+          />
+          <label for="" class="formulario__label"></label>
+          <input
+            class="controls"
+            type="text"
+            name="telefono"
+            id="telefono"
+            placeholder="Número de teléfono celular"
+            required
+          />
+          <label for="" class="formulario__label"></label>
+          <input
+            class="controls"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <label for="" class="formulario__label"></label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+            class="controls formulario__textarea"
+          ></textarea>
+
+          <p>
+            <!-- Estoy de acuerdo con los -->
+            <a
+              href="https://policies.google.com/privacy?hl=es-419"
+              target="_blank"
+              >Términos y Condiciones</a
+            >
+            de seguridad
+          </p>
+          <input class="botons" type="submit" value="ENVIAR MENSAJE" />
+        </form>
+
+        <div class="copyright">
+          <span
+            >Copyright &COPY;2020 Mateo Publicidad C.A. Todos los derechos
+            reservados |
+            <a href="https://cycscarlos.github.io/MateoPublicidad_web/"
+              >MateoPublicidad.com</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Link para descargar los iconos de las redes sociales -->
+    <script
+      src="https://kit.fontawesome.com/2bf73ec1f4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Programa para "mostrar" el menu de navegación principal cuando hace responsive -->
+    <script src="js/mostrarMenu.js"></script>
+
+    <!-- Programa en JQuery para cambiar del menu de navegación principal al menu secundario estilo fijo en la cabezera -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/menuSec.js"></script>
+
+    <!-- Programa para el manejo del Menu Nav dentro de Servicios -->
+    <script src="js/card2_Depurado.js"></script>
+
+    <script src="js/muestra_oculta.js"></script>
+  </body>
+</html>
